@@ -451,8 +451,6 @@ set -g @plugin 'thuanOwa/tmux-fzf-session-switch'
 set -g @plugin 'roosta/tmux-fuzzback'
 set -g @plugin 'wfxr/tmux-fzf-url'
 set-option -g @plugin 'b0o/tmux-autoreload'
-# set -g @plugin 'tmux-plugins/tmux-urlview'
-# set -g @plugin 'gcla/tmux-wormhole'
 
 
 # -- custom variables ----------------------------------------------------------
@@ -461,13 +459,16 @@ set-option -g default-shell $SHELL
 
 # Tmux Continuum
 set -g @continuum-restore 'on'
-set -g @continuum-save-interval '15'
+set -g @continuum-save-interval '10'
 set -g @continuum-save-uptime 'on'
-
-# set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-capture-pane-contents 'on'
 set -g @resurrect-strategy-nvim 'session'
 
 set-option -g @fzf-goto-session-only 'true'
+
+# enable activity alerts
+setw -g monitor-activity on
+set -g visual-activity on
 
 # Yank plugin
 setw -g mode-keys vi
@@ -478,7 +479,7 @@ bind -T copy-mode-vi C-c send -X copy-pipe-no-clear "xsel -i --clipboard"
 # fuzzback
 set -g @fuzzback-popup 0
 set -g @fuzzback-hide-preview 1
-set -g @fuzzback-fzf-colors 'bg+:#100E23,gutter:#323F4E,pointer:#F48FB1,info:#ffe6b3,hl:#F48FB1,hl+:#63f2f1'
+set -g @fuzzback-fzf-colors 'bg+:black,gutter:black,pointer:magenta,info:yellow,hl:magenta,hl+:cyan'
 
 # These bindings are for X Windows only. If you're using a different
 # window system you have to replace the `xsel` commands with something
