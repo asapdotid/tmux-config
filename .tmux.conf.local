@@ -452,17 +452,20 @@ set -g @plugin 'roosta/tmux-fuzzback'
 set -g @plugin 'wfxr/tmux-fzf-url'
 set-option -g @plugin 'b0o/tmux-autoreload'
 
-
 # -- custom variables ----------------------------------------------------------
 
 set-option -g default-shell $SHELL
+
+# Tmux Resurrect
+set -g @resurrect-dir '~/.local/share/tmux/resurrect'
+set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
 
 # Tmux Continuum
 set -g @continuum-restore 'on'
 set -g @continuum-save-interval '10'
 set -g @continuum-save-uptime 'on'
-set -g @resurrect-capture-pane-contents 'on'
-set -g @resurrect-strategy-nvim 'session'
 
 set-option -g @fzf-goto-session-only 'true'
 
