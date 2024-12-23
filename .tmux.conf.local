@@ -458,12 +458,16 @@ set -g @plugin 'jaclu/tmux-power-zoom'
 
 set-option -g default-shell $SHELL
 
+# Tmux Resurrect
+set -g @resurrect-dir '~/.local/share/tmux/resurrect'
+set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-strategy-nvim 'session'
+
 # Tmux Continuum
 set -g @continuum-restore 'on'
 set -g @continuum-save-interval '10'
 set -g @continuum-save-uptime 'on'
-set -g @resurrect-capture-pane-contents 'on'
-set -g @resurrect-strategy-nvim 'session'
 
 set-option -g @fzf-goto-session-only 'true'
 
