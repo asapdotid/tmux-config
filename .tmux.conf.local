@@ -483,10 +483,12 @@ set -g @resurrect-dir '~/.tmux/resurrect'
 set -g @resurrect-capture-pane-contents 'on'
 set -g @resurrect-strategy-vim 'session'
 set -g @resurrect-strategy-nvim 'session'
+set -g @resurrect-save-command-strategy 'pgrep'
 
 # Tmux Continuum
+set -g @continuum-boot 'on'
 set -g @continuum-restore 'on'
-set -g @continuum-save-interval '10'
+set -g @continuum-save-interval '15'
 set -g @continuum-save-uptime 'on'
 
 set-option -g @fzf-goto-session-only 'true'
