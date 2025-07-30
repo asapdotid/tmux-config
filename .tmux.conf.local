@@ -127,7 +127,7 @@ tmux_conf_theme=enabled
     tmux_conf_theme_colour_17="#e4e5e6"   # white
     tmux_conf_theme_colour_18="#008787"   # green
     tmux_conf_theme_colour_19="#10a19d"   # green
-}
+%endif
 
 # window style
 tmux_conf_theme_window_fg="default"
