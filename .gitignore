@@ -1,3 +1,6 @@
 plugins/**
 *.bak
 *.swp
+*.tmp
+*.log
+*.test
