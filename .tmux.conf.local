@@ -1,4 +1,4 @@
-# : << EOF
+# : << 'EOF'
 # Oh my tmux!
 # 💛🩷💙🖤❤️🤍
 # https://github.com/gpakosz/.tmux
@@ -85,7 +85,7 @@ tmux_conf_24b_colour=auto
 tmux_conf_theme=enabled
 
 # Apply theme colors based on the theme name
-if-shell -b '[ "${TMUX_THEME}" -eq "dark" ]' {
+%if '#{==:#{TMUX_THEME},dark}'
     tmux_conf_theme_colour_1="#080808"    # dark green
     tmux_conf_theme_colour_2="#151515"    # gray
     tmux_conf_theme_colour_3="#f2f2f2"    # light gray
@@ -105,9 +105,9 @@ if-shell -b '[ "${TMUX_THEME}" -eq "dark" ]' {
     tmux_conf_theme_colour_17="#e4e5e6"   # white
     tmux_conf_theme_colour_18="#59a5d8"   # blue
     tmux_conf_theme_colour_19="#84d2f6"   # blue
-}
+%endif
 
-if-shell -b '[ "${TMUX_THEME}" -eq "manjaro" ]' {
+%if '#{==:#{TMUX_THEME},manjaro}'
     tmux_conf_theme_colour_1="#222d31"    # dark green
     tmux_conf_theme_colour_2="#303e44"    # gray
     tmux_conf_theme_colour_3="#c8cbcc"    # light gray
