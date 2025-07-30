@@ -86,25 +86,25 @@ tmux_conf_theme=enabled
 
 # Apply theme colors based on the theme name
 %if '#{==:#{TMUX_THEME},dark}'
-    tmux_conf_theme_colour_1="#080808"    # dark green
-    tmux_conf_theme_colour_2="#151515"    # gray
+    tmux_conf_theme_colour_1="#212529"    # dark blue
+    tmux_conf_theme_colour_2="#343a40"    # gray
     tmux_conf_theme_colour_3="#f2f2f2"    # light gray
-    tmux_conf_theme_colour_4="#84d2f6"    # light blue
-    tmux_conf_theme_colour_5="#fcefb4"    # yellow
-    tmux_conf_theme_colour_6="#080808"    # dark green
+    tmux_conf_theme_colour_4="#3a7ca5"    # light blue
+    tmux_conf_theme_colour_5="#ffd166"    # yellow
+    tmux_conf_theme_colour_6="#212529"    # dark blue
     tmux_conf_theme_colour_7="#f8f9fa"    # white
-    tmux_conf_theme_colour_8="#080808"    # dark green
-    tmux_conf_theme_colour_9="#fcefb4"    # yellow
-    tmux_conf_theme_colour_10="#f564a9"   # pink
-    tmux_conf_theme_colour_11="#88d4ab"   # green
+    tmux_conf_theme_colour_8="#212529"    # dark blue
+    tmux_conf_theme_colour_9="#ffd166"    # yellow
+    tmux_conf_theme_colour_10="#ef476f"   # pink
+    tmux_conf_theme_colour_11="#78c6a3"   # green
     tmux_conf_theme_colour_12="#f2f2f2"   # light gray
     tmux_conf_theme_colour_13="#e4e5e6"   # white
-    tmux_conf_theme_colour_14="#080808"   # dark green
-    tmux_conf_theme_colour_15="#080808"   # dark green
-    tmux_conf_theme_colour_16="#cd5656"   # red
+    tmux_conf_theme_colour_14="#212529"   # dark blue
+    tmux_conf_theme_colour_15="#212529"   # dark blue
+    tmux_conf_theme_colour_16="#c9184a"   # red
     tmux_conf_theme_colour_17="#e4e5e6"   # white
-    tmux_conf_theme_colour_18="#59a5d8"   # blue
-    tmux_conf_theme_colour_19="#84d2f6"   # blue
+    tmux_conf_theme_colour_18="#2f6690"   # blue
+    tmux_conf_theme_colour_19="#3a7ca5"   # blue
 %endif
 
 %if '#{==:#{TMUX_THEME},manjaro}'
